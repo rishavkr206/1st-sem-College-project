@@ -1,0 +1,27 @@
+int sensorPin = A0;
+int sensorValue = 0;
+int ledPin = 13;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  sensorValue = analogRead(sensorPin);
+  int moisturePercent = map(sensorValue, 1023, 0, 0, 100);
+
+  Serial.print("Sensor Value: ");
+  Serial.print(sensorValue);
+  Serial.print(" - Moisture: ");
+  Serial.print(moisturePercent);
+  Serial.println("%");
+
+  if (moisturePercent < 30) {
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+
+  delay(1000);
+}
