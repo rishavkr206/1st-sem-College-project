@@ -1,0 +1,11 @@
+Components:
+Soil moisture sensor
+Arduino board (e.g., Uno)
+Jumper wires
+Optional: LED + resistor (for the dry condition indicator)
+Wiring:
+Soil Moisture Sensor:
+
+VCC to 5V on Arduino.
+GND to GND on Arduino.
+Analog output (AO) to A0 on Arduino.
