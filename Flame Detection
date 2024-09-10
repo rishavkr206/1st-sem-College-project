@@ -1,0 +1,28 @@
+const int flamePin = A0;
+const int buzzerPin = 3;
+const int ledPin = 4;
+int flameValue = 0;
+int threshold = 300;
+
+void setup() {
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  flameValue = analogRead(flamePin);
+  Serial.print("Flame Sensor Value: ");
+  Serial.println(flameValue);
+
+  if (flameValue > threshold) {
+    digitalWrite(buzzerPin, HIGH);
+    digitalWrite(ledPin, HIGH);
+    Serial.println("Flame detected!");
+  } else {
+    digitalWrite(buzzerPin, LOW);
+    digitalWrite(ledPin, LOW);
+  }
+
+  delay(1000);
+}
