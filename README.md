@@ -11,3 +11,7 @@ In a smart farm setup, integrating various sensors into a unified system enhance
 5. **Environmental Sensor**: Measuring factors such as temperature, humidity, and light levels, this sensor provides vital information on the environmental conditions affecting crop growth and livestock health. By analyzing this data, farmers can make informed decisions about adjusting environmental controls to optimize growing conditions.
 
 Together, these sensors form a cohesive smart farm system that not only enhances productivity and safety but also promotes sustainable farming practices. By integrating real-time data collection and automated responses, the smart farm system delivers comprehensive insights and control, leading to more efficient and effective farm management.
+
+
+https://github.com/user-attachments/assets/47b13d4e-d99a-45cc-995d-c15bdb437361
+
