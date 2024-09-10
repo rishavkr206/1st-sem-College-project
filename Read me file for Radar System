@@ -1,0 +1,17 @@
+Components:
+Arduino board
+Ultrasonic sensor (HC-SR04)
+Servo motor
+Jumper wires
+Wiring:
+Ultrasonic Sensor (HC-SR04):
+
+VCC to 5V on Arduino.
+GND to GND on Arduino.
+Trig to Pin 9.
+Echo to Pin 10.
+Servo Motor:
+
+VCC to 5V.
+GND to GND.
+Signal to Pin 11.
